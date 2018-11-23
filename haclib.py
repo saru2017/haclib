@@ -52,3 +52,12 @@ def make_fsas(target_addr, val_to_write, argc_start):
 
     return ret
 
+
+
+def val2str(val):
+    ret = b""
+    items = p(val)
+    for item in items:
+        ret += b"\\x%02x" % (int(item))
+    return ret;
+
