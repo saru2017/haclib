@@ -22,7 +22,7 @@ while True:
     rf = open(filename, "r")
     rf.seek(top)
     wf = open(write_filename, "w")
-    haclib.zip_extract_localfile(rf, wf)
+    haclib.zip_extract_LF(rf, wf)
     rf.close()
     wf.close()
     print("*****************************")
